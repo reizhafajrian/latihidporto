@@ -1,0 +1,522 @@
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    header {
+        box-shadow: 0px 2px 2px 2px rgba(224, 224, 224, 0.25);
+        ;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .logo img {
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+    
+    .nav-min {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .nav-bar {
+        margin-left: 47px;
+    }
+    
+    .nav-bar ul {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .nav-bar ul li {
+        margin-right: 25px;
+        list-style-type: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .button #daftar {
+        width: 72px;
+        height: 32px;
+        background-color: #FC8047;
+        color: white;
+        border: 1px solid #FC8047;
+        border-radius: 20px;
+    }
+    
+    .button #masuk {
+        background: none;
+        border: none;
+        color: #FC8047;
+        margin-right: 41px;
+    }
+    
+    .onboard {
+        position: relative;
+        width: 100%;
+    }
+    
+    .image {
+        position: relative;
+        max-width: 100%;
+        height: fit-content;
+        width: 1441px;
+        margin: 0px auto;
+        max-width: ;
+        max-width: 100%;
+    }
+    
+    .image-on {
+        position: absolute;
+        right: 0px;
+    }
+    
+    .img-relative {
+        position: absolute;
+        width: 95%;
+        left: 5%;
+        transform: translateY(37%);
+    }
+    
+    .img-absolute {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        left: 0%;
+        right: 0%;
+    }
+    
+    .text-image {
+        width: 1250px;
+        margin: 0px auto;
+        position: relative;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+    }
+    
+    #collapse-menus ul {
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    #collapse-menus {
+        display: none;
+        background-color: #E0E0E0;
+        width: 60px;
+        position: absolute;
+        top: 0%;
+        left: 300px;
+    }
+    
+    .text {
+        width: 644px;
+    }
+    
+    .onboarding-image {
+        position: relative;
+        max-width: 100%;
+        margin-top: 26px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .coba {
+        margin-left: 10px;
+        margin-top: 55px;
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        margin-bottom: 90px;
+    }
+    
+    .text-2 {
+        padding-left: 30px;
+    }
+    
+    .text-2 h1 {
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 50px;
+        margin-bottom: 26px;
+    }
+    
+    .text-2 p {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    
+    .content-benefits {
+        width: 1440px;
+        margin: 0px auto;
+        height: 500px;
+        max-width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-height: max-content;
+    }
+    
+    #program:hover .collapse-menus {
+        display: block;
+    }
+    
+    .text-benefits,
+    .text-kemitraan {
+        text-align: center;
+        align-self: center;
+        margin-top: 54px;
+    }
+    
+    .text-benefits .text,
+    .text-kemitraan {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41px;
+        width: 100%;
+    }
+    
+    .content {
+        position: relative;
+        width: 100%;
+        width: 1250px;
+        margin: 0px auto;
+    }
+    
+    .content .line {
+        width: 100%;
+    }
+    
+    .absolute-section {
+        position: relative;
+    }
+    
+    .penjelasan {
+        display: flex;
+    }
+    
+    .insentif,
+    .bisnis,
+    .pengalaman,
+    .sertifikat {
+        width: max-content;
+        position: absolute;
+    }
+    
+    .text-judul-bisnis,
+    .text-judul-insentif,
+    .text-judul-pengalaman,
+    .text-judul-sertifikat {
+        margin-left: 15px;
+    }
+    
+    #bisnis-image,
+    #insentif-image,
+    #pengalaman-image,
+    #sertifikat-image {
+        width: 100px;
+    }
+    
+    .text-judul-bisnis,
+    .text-judul-insentif,
+    .text-judul-pengalaman,
+    .text-judul-sertifikat {
+        width: 250px;
+    }
+    
+    .bisnis {
+        left: 152px;
+        top: 200px;
+    }
+    
+    input #myfile {
+        width: 100%;
+    }
+    
+    .insentif {
+        left: 496px;
+        top: 110px;
+    }
+    
+    .pengalaman {
+        top: 190px;
+        left: 750px;
+    }
+    
+    .sertifikat {
+        top: 97px;
+        right: 0px;
+    }
+    
+    .judul {
+        font-weight: 800;
+    }
+    
+    .content-kemitraan {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    
+    .card-values {
+        margin: 0px auto;
+        width: 1250px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 53px;
+        justify-items: center;
+    }
+    
+    .pemateri-judul .image {
+        margin: 20px auto;
+    }
+    
+    .pemateri-judul {
+        width: 244px;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 8px;
+        background-color: white;
+    }
+    
+    .pemateri-judul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        margin-top: 14px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    .title p {
+        padding: 10px;
+    }
+    
+    .judul {
+        margin-bottom: 20px;
+    }
+    
+    .regist {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .button-2 {
+        width: max-content;
+        max-width: 100%;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+    
+    .button-2 .send {
+        background: #FC8047;
+        border-radius: 30px;
+        height: 41.167724609375px;
+        width: 130px;
+        border: none;
+        color: white;
+    }
+    
+    .regist .title-forms {
+        align-self: center;
+        width: max-content;
+        text-align: center;
+        width: 517px;
+        margin-top: 62px;
+    }
+    
+    .title-forms #judul {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .title-forms #text {
+        margin-top: 20px;
+    }
+    
+    #line {
+        margin-top: 24px;
+        align-self: center;
+        width: 1126px;
+        opacity: 0.15;
+        border: 2px solid #000000;
+    }
+    
+    .forms-regist {
+        margin-top: 38px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 1100px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+    
+    #kerjasama {
+        width: 497px;
+        height: 38px;
+    }
+    
+    .text-field {
+        margin-bottom: 10px;
+    }
+    
+    .text-field input {
+        width: 497px;
+        height: 38px;
+        border: 1px solid rgba(0, 0, 0, 0.75);
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    
+    .forms-right {
+        margin-left: 76px;
+    }
+    
+    .image-icon {
+        margin: 0px auto;
+        margin-top: 31px;
+    }
+    
+    @media screen and (max-width: 1213px) {
+        .text-image {
+            flex-direction: column;
+            align-items: center;
+            height: max-content;
+            width: 700px;
+        }
+        .text-image .text {
+            position: relative;
+            width: 700px;
+            max-width: 100%;
+        }
+        .image-on {
+            position: relative;
+        }
+        .text-benefits {
+            position: relative;
+            max-width: 100%;
+            width: 400px;
+        }
+        .text-benefits .text {
+            text-align: center;
+        }
+        .content .line {
+            display: none;
+        }
+        .absolute {
+            margin: 0px auto;
+            margin-top: 0px;
+            width: 1250px;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 53px;
+            justify-items: center;
+        }
+        .content {
+            max-width: 100%;
+        }
+        .insentif,
+        .bisnis,
+        .pengalaman,
+        .sertifikat {
+            position: relative;
+            width: max-content;
+            border: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: ;
+        }
+        .content-benefits {
+            height: max-content;
+        }
+        .bisnis,
+        .insentif,
+        .pengalaman,
+        .sertifikat {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            text-align: center;
+        }
+        @media screen and (max-width: 1117px) {
+            .absolute,
+            .card-values,
+            .forms-regist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .insentif,
+            .bisnis,
+            .pengalaman,
+            .sertifikat {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                height: 200px;
+            }
+            #bisnis-image,
+            #insentif-image,
+            #pengalaman-image,
+            #sertifikat-image {
+                width: 100px;
+                height: 100px;
+            }
+            .text-judul-bisnis,
+            .text-judul-insentif,
+            .text-judul-pengalaman,
+            .text-judul-sertifikat,
+            .pemateri-judul {
+                margin-top: 10px;
+            }
+            .forms-right {
+                margin-left: 0px;
+            }
+        }
+    }
+    
+    #myFile {
+        width: 100%;
+        border: none;
+    }
+    
+    .popup {
+        margin: 0px auto;
+        width: max-content;
+        margin-top: 10px;
+        color: green;
+        display: none;
+    }
