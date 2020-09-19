@@ -141,7 +141,7 @@
     
     .onboarding-image {
         position: relative;
-        max-width: 100%;
+        max-width: 90%;
         margin-top: 26px;
         margin-left: 10px;
         margin-right: 10px;
@@ -157,6 +157,7 @@
     }
     
     .text-2 {
+        width: 90%;
         padding-left: 30px;
     }
     
@@ -352,6 +353,7 @@
         text-align: center;
         width: 517px;
         margin-top: 62px;
+        width: 100%;
     }
     
     .title-forms #judul {
@@ -367,7 +369,7 @@
     #line {
         margin-top: 24px;
         align-self: center;
-        width: 1126px;
+        width: 80%;
         opacity: 0.15;
         border: 2px solid #000000;
     }
@@ -617,6 +619,11 @@
         }
        
     }
+    .forms-left{
+        position: relative;
+        width: 100%;
+    }
     textarea{
         width: 80%;
     }
+  
