@@ -405,6 +405,7 @@
     
     .forms-right {
         margin-left: 76px;
+        width: 80%;
     }
     
     .image-icon {
@@ -615,4 +616,7 @@
             width: 80%;
         }
        
+    }
+    textarea{
+        width: 80%;
     }
