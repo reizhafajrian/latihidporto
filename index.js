@@ -1,35 +1,36 @@
+import GetForms from './forms_get.js';
+import show from './show.js';
+
 const main = () => {
+    const selection = document.querySelector("#kerjasama");
+    const nama = document.querySelector("#nama");
+    const email = document.querySelector("#email");
+    const nomortelfon = document.querySelector("#nomor-telfon");
+    const topik = document.querySelector("#text-area");
+    const line = document.querySelector('.menu-toggle span:nth-child(2)')
+
+    if (window.performance) {
+        nama.value = "";
+        email.value = "";
+        nomortelfon.value = "";
+        topik.value = "";
+
+    }
+
+    const data = new GetForms(selection, nama, email, nomortelfon, topik);
+    const button = document.querySelector("#send")
+    data.out();
+    button.onclick = () => {
+        data.out();
+    }
+
+
 
     window.onload = async() => {
-        const collapse = document.getElementById('button-program');
-        const menu = document.getElementById('collapse-menus');
-        const send = document.getElementById('send');
-        const popup = document.getElementById('popup');
-        const menuToggle = document.querySelector('.menu-toggle input');
-        const nav = document.querySelector('.nav-bar');
-        const button = document.querySelector('.button')
-        menuToggle.addEventListener('click', () => {
-            if (nav.style.opacity == "1") {
-                nav.style.opacity = "0";
-                button.style.opacity = "0"
-            } else {
-                nav.style.opacity = "1";
-                button.style.opacity = "1"
-            }
-        });
-        collapse.onclick = () => {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            }
-        }
-        send.onclick = () => {
-            popup.style.display = 'block'
-            setTimeout(() => {
-                popup.style.display = 'none'
-            }, 3000);
-        }
+
+
+        show()
     }
 }
+
 document.addEventListener("DOMContentLoaded", main);

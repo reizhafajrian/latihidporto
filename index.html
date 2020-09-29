@@ -32,10 +32,10 @@
 
             <div class="button">
                 <button id="masuk">Masuk</button>
-                <button id="daftar"><a href="#forms">Daftar</a> </button>
+                <button id="daftar"><a  data-easing="linear" href="#forms">Daftar</a> </button>
             </div>
             <div class="menu-toggle">
-                <input type="checkbox" />
+                <input type="checkbox" id="check" />
                 <span></span>
                 <span></span>
                 <span></span>
@@ -160,71 +160,74 @@
         </div>
     </section>
     <section id="forms">
-        <div class="regist">
-            <div class="title-forms">
-                <p id="judul">Ayo Kolaborasi</p>
-                <p id="text">Silahkan isi dan lengkapi data berikut ini. LatihID akan segera menghubungi Anda!</p>
-            </div>
-            <hr id="line">
-            <div class="forms-regist">
-                <form action=""></form>
-                <div class="forms-left">
-                    <div class="text-field">
-                        <p>Kerja Sama Yang Di inginkan *</p>
-                        <select id="kerjasama" required>
+        <form action="" method="post">
+            <div class="regist">
+                <div class="title-forms">
+                    <p id="judul">Ayo Kolaborasi</p>
+                    <p id="text">Silahkan isi dan lengkapi data berikut ini. LatihID akan segera menghubungi Anda!</p>
+                </div>
+                <hr id="line">
+                <div class="forms-regist">
+
+                    <div class="forms-left">
+                        <div class="text-field">
+                            <p>Kerja Sama Yang Di inginkan *</p>
+                            <select id="kerjasama" required>
                             <option value="0"></option>
                             <option value="1">Lorem ipsum dolor sit amet</option>
                             <option value="2">Lorem ipsum dolor sit amet</option>
                             <option value="3">Lorem ipsum dolor sit amet</option>
                           </select>
+                        </div>
+                        <div class="text-field">
+                            <label for="">Nama</label>
+                            <br>
+                            <input type="text" id="nama" required>
+                        </div>
+                        <div class="text-field">
+                            <label for="">Email</label> <br>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="text-field">
+                            <label for="">Nomor Telfon</label> <br>
+                            <input type="text" id="nomor-telfon" required>
+                        </div>
                     </div>
-                    <div class="text-field">
-                        <label for="">Nama</label>
-                        <br>
-                        <input type="text" required>
-                    </div>
-                    <div class="text-field">
-                        <label for="">Email</label> <br>
-                        <input type="email" required>
-                    </div>
-                    <div class="text-field">
-                        <label for="">Nomor Telfon</label> <br>
-                        <input type="text" required>
-                    </div>
-                </div>
-                <div class="forms-right">
-                    <div class="text-field">
-                        <label for="">Upload CV</label> <br>
-                        <button class="styleClass" onclick="document.getElementById('getFile').click()">Choose File</button>
-                        <input type='file' id="getFile" style="display:none" required>
-                    </div>
-                    <div class="text-field ">
-                        <label for="">Upload Portofolio atau Proposal Kerjasama</label> <br>
-                        <button class="styleClass" onclick="document.getElementById('getFile').click()">Choose File</button>
-                        <input type='file' id="getFile" style="display:none" required>
-                    </div>
-                    <div class="text-field ">
-                        <label for=" ">Topik Yang Diajukan</label> <br>
-                        <textarea id="text " name="text-topic " rows="4 " cols="50 " required>
+                    <div class="forms-right">
+                        <div class="text-field">
+                            <label for="">Upload CV</label> <br>
+                            <button class="styleClass" onclick="document.getElementById('getFile').click()">Choose File</button>
+                            <input type='file' id="getFile" style="display:none" required>
+                        </div>
+                        <div class="text-field ">
+                            <label for="">Upload Portofolio atau Proposal Kerjasama</label> <br>
+                            <button class="styleClass" onclick="document.getElementById('getFile').click()">Choose File</button>
+                            <input type='file' id="getFile" style="display:none" required>
+                        </div>
+                        <div class="text-field ">
+                            <label for=" ">Topik Yang Diajukan</label> <br>
+                            <textarea id="text-area" name="text-topic " rows="4 " cols="50 " required>
                           </textarea>
+                        </div>
                     </div>
+
+                </div>
+                <div class="button-2 ">
+                    <button class="send" id="send">Kirim</button>
                 </div>
 
-            </div>
-            <div class="button-2 ">
-                <button class="send" id="send">Kirim</button>
-            </div>
-
-            <div class="popup" id="popup">
-                <p>Selamat Data Anda Berhasil Di kirim</p>
-            </div>
+                <div class="popup" id="popup">
+                    <p>Selamat Data Anda Berhasil Di kirim</p>
+                </div>
+        </form>
     </section>
 
-    <script src="index.js "></script>
-    <script src="smooth-scroll.js "></script>
+    <script type="module" src="./index.js "></script>
+    <script src="./smooth-scroll.polyfills.js"></script>
     <script>
-        var scroll = new SmoothScroll('a[href*="# "]');
+        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+
 </body>
 
 </html>

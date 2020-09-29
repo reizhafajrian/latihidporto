@@ -11,7 +11,6 @@
     
     header {
         box-shadow: 0px 2px 2px 2px rgba(224, 224, 224, 0.25);
-        
     }
     
     .logo {
@@ -119,6 +118,7 @@
     }
     
     #collapse-menus ul {
+        margin-top: 20px;
         text-align: center;
         position: relative;
         display: flex;
@@ -126,13 +126,18 @@
         list-style: none;
     }
     
+    #collapse-menus ul li {
+        margin-bottom: 10px;
+    }
+    
     #collapse-menus {
         display: none;
-        background-color: #E0E0E0;
-        width: 60px;
+        background-color: white;
+        height: 100px;
+        width: 100px;
         position: absolute;
         top: 0%;
-        left: 300px;
+        left: 290px;
     }
     
     .text {
@@ -205,7 +210,6 @@
     
     .content {
         position: relative;
-    
         margin: 0px auto;
     }
     
@@ -265,8 +269,8 @@
     }
     
     .pengalaman {
-        top: 190px;
-        left: 750px;
+        top: 200px;
+        left: 800px;
     }
     
     .sertifikat {
@@ -407,7 +411,7 @@
     
     .forms-right {
         margin-left: 76px;
-        width: 80%;
+        width: 100%;
     }
     
     .image-icon {
@@ -416,6 +420,15 @@
     }
     
     @media screen and (max-width: 1213px) {
+        form {
+            padding: 20px;
+        }
+        #collapse-menus {
+            top: 3%;
+            right: 200px;
+            left: auto;
+            background-color: white;
+        }
         .text-image {
             flex-direction: column;
             align-items: center;
@@ -554,20 +567,6 @@
         transform-origin: 0 100%;
     }
     
-    .menu-toggle input:checked~span:nth-child(2) {
-        background-color: #000000;
-        transform: rotate(45deg) translate(-1px, -1px);
-    }
-    
-    .menu-toggle input:checked~span:nth-child(3) {
-        opacity: 0;
-        transform: scale(0);
-    }
-    
-    .menu-toggle input:checked~span:nth-child(4) {
-        transform: rotate(-45deg) translate(-1px, 0);
-    }
-    
     .menu-toggle input {
         position: absolute;
         width: 40px;
@@ -613,17 +612,17 @@
             opacity: 0;
             z-index: 100;
         }
-        .forms-left{
+        .forms-left {
             position: relative;
             width: 80%;
         }
-       
     }
-    .forms-left{
+    
+    .forms-left {
         position: relative;
         width: 100%;
     }
-    textarea{
+    
+    textarea {
         width: 80%;
     }
-  
